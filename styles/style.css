@@ -73,7 +73,7 @@ img{
 
 #box{
     width:75%;
-    height: auto;
+    height: 4vh;
     align-self:flex-start;
     justify-self: center;
     margin: 1%;
@@ -81,7 +81,6 @@ img{
     border-color:  rgba(0, 0, 0, 0.89);
     
     border-width:4px;
-    padding: 1vh;
     border-radius: 100px;
     margin-bottom: 2%;
     background-repeat: no-repeat;
