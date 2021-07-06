@@ -10,3 +10,5 @@ Skills used to create this project:
 * Learn how to properly implement CSS Flexbox Layout.
 * Import fonts from https://fonts.google.com/
 * Apply relative units to allow the page to render in correct proportions regardless of the screen size.
+
+Live Link: https://majdbrt.github.io/Google-homepage-CLONE/
