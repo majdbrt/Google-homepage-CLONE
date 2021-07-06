@@ -1,5 +1,5 @@
 html{
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgba(0, 0, 0, 0.86);
     font-family: "Ubuntu";
     font-size: 70%;
     margin: 0;
@@ -8,7 +8,7 @@ html{
 body{
     margin: 0;
     display: grid;
-    grid-template-rows: 5vh 90vh 5vh;
+    grid-template-rows: 7vh 87vh 6vh;
 }
 .container{
     width: 100%;
@@ -22,98 +22,110 @@ header{
     grid-row: 1/2;
     display: grid;
     grid-template-columns:max-content max-content auto  max-content  max-content max-content max-content;
+    justify-items: center;
 }
 footer{
    background-color: rgba(0, 0, 0, 0.3);
    grid-row: 3/4;
    display: grid;
-   grid-template-columns: max-content max-content max-content auto max-content max-content max-content ;
-   justify-items: center;
-   
+   grid-template-columns: max-content max-content max-content auto max-content max-content max-content ;  
+    grid-gap: 1vw;
 }
 a{
     color: white;
     text-decoration: none;
     justify-self: center;
     align-self: center;
-    margin-left: 2vw;
+    padding-left: 1vw;
 }
 a:hover,a:focus{
     text-decoration: underline;
 }
+#about{
+    margin-left: 0.5vw;
+}
 #gmail{
     grid-column: 4/5;
 }
-#settings{
-    margin-right: 2vw;
-}
-
 img{
-    width: auto;
-    height: auto;
-    
+    max-height: 50%;
+    max-width: 50%;
+        
     grid-column: 2/3    ;
     grid-row: 2/3;
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
+    margin-bottom: 3%;
 }
 .search-area{
     width: 100%;
     height: auto;
     grid-column: 2/3;
     grid-row: 3/4;
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
 
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     
 }
 
 #box{
-    width:100%;
-    height: 3vh;
-    align-self:center;
+    width:75%;
+    height: auto;
+    align-self:flex-start;
     justify-self: center;
     margin: 1%;
-    border-width:0.2vw;
     grid-column: 1/5;
-    border-color:rgba(0, 0, 0, 0.89);
+    border-color:  rgba(0, 0, 0, 0.89);
+    
+    border-width:4px;
+    padding: 1vh;
+    border-radius: 100px;
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image:  url('../images/search-icon.png');
+    background-position: left;
+    background-size:contain;
 }
 
 #box:focus,#box:hover{
     border-color: rgb(0, 166, 255);
-   /* border-width:0.2vw;*/
+    outline: none;
 }
 
 #search-button{
-    width: 75%;
-    min-width: fit-content;
-    max-width: 95%;
+    width: fit-content;
+    padding: 3%;
     align-self:center;
     justify-self:right;
     border-radius: 1%;
-    border-width:0.2vw;
+
+    border-width:4px;
     grid-column: 2/3;
     margin-top: 3%;  
     margin-right: 3%;
     margin-left: 0%;
-    border-color:rgba(0, 0, 0, 0.89);
+    border-color:rgba(0, 0, 0, 0.86);;
     
 }
 #lucky-button{
-    width: 75%;
-    min-width: fit-content;
+    width: fit-content;
+    padding: 3%;
     align-self: center;
     justify-self: left;
     border-radius: 1%;
-    border-width:0.2vw;
+    border-width:4px;
     grid-column: 3/4;
     margin-top: 3%;
     margin-left: 3%; 
     margin-right: 0%;
-    border-color:rgba(0, 0, 0, 0.89);
+    border-color:rgba(0, 0, 0, 0.86);;
+    
 }
 #search-button:hover, #search-button:focus{
    border-color: rgb(0, 166, 255);
@@ -122,4 +134,44 @@ img{
 #lucky-button:hover, #lucky-button:focus{
     border-color: rgb(0, 166, 255);
    /* border-width:0.2vw;*/
+}
+
+#advertising{
+    margin-left: 1vw;
+}
+.MFcontainer{
+    display:flex;
+    flex-direction: row-reverse;
+    margin-right: 80px;
+    grid-column: 4/5;
+    align-self: center;
+    justify-self: center
+}
+
+#leaf{
+    order:1;
+    margin: 0;
+    width: 25px;
+    align-self: center;
+    justify-self: flex-end;
+}
+#carbon{
+    margin-left: 0;
+    justify-self: flex-start;
+    align-self: center;
+    padding-left: 0;
+}
+#settings{
+    padding-right: 2vw;
+}
+#grid{
+    border-radius: 100px;
+    width: 60px;
+}
+#account{
+    padding: 15px;
+    background-color:black;
+    border-radius: 15px;
+    display: block;
+    margin-right: 1vw;
 }
